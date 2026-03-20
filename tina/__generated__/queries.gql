@@ -1,0 +1,109 @@
+query szkolenia($relativePath: String!) {
+  szkolenia(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...SzkoleniaParts
+  }
+}
+
+query szkoleniaConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: SzkoleniaFilter) {
+  szkoleniaConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...SzkoleniaParts
+      }
+    }
+  }
+}
+
+query strona($relativePath: String!) {
+  strona(relativePath: $relativePath) {
+    ... on Document {
+      _sys {
+        filename
+        basename
+        hasReferences
+        breadcrumbs
+        path
+        relativePath
+        extension
+      }
+      id
+    }
+    ...StronaParts
+  }
+}
+
+query stronaConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: StronaFilter) {
+  stronaConnection(
+    before: $before
+    after: $after
+    first: $first
+    last: $last
+    sort: $sort
+    filter: $filter
+  ) {
+    pageInfo {
+      hasPreviousPage
+      hasNextPage
+      startCursor
+      endCursor
+    }
+    totalCount
+    edges {
+      cursor
+      node {
+        ... on Document {
+          _sys {
+            filename
+            basename
+            hasReferences
+            breadcrumbs
+            path
+            relativePath
+            extension
+          }
+          id
+        }
+        ...StronaParts
+      }
+    }
+  }
+}

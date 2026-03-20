@@ -1,0 +1,15 @@
+fragment SzkoleniaParts on Szkolenia {
+  __typename
+  title
+  subtitle
+  description
+  price
+  duration
+  level
+}
+
+fragment StronaParts on Strona {
+  __typename
+  title
+  content
+}
