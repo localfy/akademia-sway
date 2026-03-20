@@ -1,0 +1,14 @@
+{
+  "title": "O mnie",
+  "name": "Joanna Olejniczak",
+  "bio": "Jestem instruktorką i trenerką pole dance z wieloletnim doświadczeniem. Założyłam Akademię Sway, żeby dzielić się wiedzą z instruktorami, którzy chcą uczyć bezpiecznie i efektywnie.",
+  "experience": "Ponad 8 lat doświadczenia w nauczaniu pole dance. Certyfikowana instruktorka i sędzia zawodów pole sport.",
+  "certifications": [
+    "Certyfikat Instruktora Pole Dance",
+    "Certyfikat Sędziego Pole Sport",
+    "Szkolenie z zakresu anatomii ruchu"
+  ],
+  "location": "Poznań",
+  "instagram": "@akademia_sway",
+  "email": "kontakt@akademia-sway.pl"
+}

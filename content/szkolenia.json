@@ -1,0 +1,89 @@
+{
+  "basic": {
+    "id": "basic",
+    "title": "BASIC",
+    "subtitle": "Solidne podstawy metodyczne",
+    "price": "990",
+    "duration": "2 dni",
+    "nextDate": "",
+    "description": "Szkolenie BASIC to fundament pracy każdego instruktora pole dance. Nauczysz się planować zajęcia, wprowadzać figury i budować świadomość ciała u kursantów.",
+    "program": [
+      "Jak zaplanować pierwsze 6 miesięcy zajęć",
+      "Jak wprowadzać statyk na zajęciach",
+      "Jakie są najczęstsze błędy oraz jak ich unikać",
+      "Jak dopasować rozgrzewkę do poziomu uczestników",
+      "Jak wprowadzać figury na zajęciach",
+      "Jak budować świadomość ciała u kursantów",
+      "Jak radzić sobie kiedy mamy wymieszany poziom",
+      "Co to progresja i regresja oraz jak ich używać",
+      "Co zawiera dobry plan treningowy i jak go stworzyć",
+      "Czy asekuracja na poziomie podstawowym jest potrzebna, kiedy i jak ją stosować"
+    ],
+    "image": "/group-basic.jpg"
+  },
+  "intermediate": {
+    "id": "intermediate",
+    "title": "INTERMEDIATE",
+    "subtitle": "Zaawansowana metodyka nauczania",
+    "price": "1190",
+    "duration": "2 dni",
+    "nextDate": "",
+    "description": "Szkolenie dla instruktorów z doświadczeniem, którzy chcą podnieść jakość swoich zajęć na wyższy poziom.",
+    "program": [
+      "Nauczanie figur inwertowanych",
+      "Metodyka pracy z kursantami zaawansowanymi",
+      "Budowanie sekwencji i choreografii",
+      "Asekuracja przy figurach trudnych",
+      "Indywidualne podejście do kursanta"
+    ],
+    "image": "/group-intermediate.jpg"
+  },
+  "advanced": {
+    "id": "advanced",
+    "title": "ADVANCED",
+    "subtitle": "Mistrzostwo w nauczaniu",
+    "price": "1390",
+    "duration": "2 dni",
+    "nextDate": "",
+    "description": "Najwyższy poziom szkolenia instruktorskiego. Dla doświadczonych instruktorów chcących poszerzyć kompetencje.",
+    "program": [
+      "Nauczanie figur ekstremalnych",
+      "Choreografia na zaawansowanym poziomie",
+      "Prowadzenie warsztatów i masterclass",
+      "Praca z zawodnikami"
+    ],
+    "image": "/group-advanced.jpg"
+  },
+  "abc-dynamiki": {
+    "id": "abc-dynamiki",
+    "title": "ABC DYNAMIKI",
+    "subtitle": "Wprowadzenie do dynamiki",
+    "price": "790",
+    "duration": "1 dzień",
+    "nextDate": "",
+    "description": "Pierwsze kroki w nauczaniu dynamiki — bezpiecznie i metodycznie.",
+    "program": [
+      "Czym jest dynamika i jak ją bezpiecznie wprowadzać",
+      "Pierwsze rzuty i łapania",
+      "Asekuracja w dynamice",
+      "Progresja ćwiczeń dynamicznych"
+    ],
+    "image": "/group-abc.jpg"
+  },
+  "dynamika-2-0": {
+    "id": "dynamika-2-0",
+    "title": "DYNAMIKA 2.0",
+    "subtitle": "Zaawansowana dynamika",
+    "price": "1090",
+    "duration": "2 dni",
+    "nextDate": "",
+    "description": "Rozwinięcie umiejętności z ABC Dynamiki. Kompleksowe szkolenie z zaawansowanych technik dynamicznych.",
+    "program": [
+      "Zaawansowane rzuty i łapania",
+      "Budowanie sekwencji dynamicznych",
+      "Bezpieczeństwo na najwyższym poziomie",
+      "Nauczanie dynamiki grupom"
+    ],
+    "image": "/group-dynamika.jpg"
+  }
+}
