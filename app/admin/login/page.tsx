@@ -8,14 +8,16 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  async function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
     setError('');
+    const formData = new FormData(e.currentTarget);
+    const pwd = formData.get('password') as string || password;
     const res = await fetch('/api/admin/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password }),
+      body: JSON.stringify({ password: pwd }),
     });
     if (res.ok) {
       router.push('/admin');
@@ -36,6 +38,7 @@ export default function LoginPage() {
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
           <input
             type="password"
+            name="password"
             value={password}
             onChange={e => setPassword(e.target.value)}
             placeholder="Hasło"
@@ -45,8 +48,8 @@ export default function LoginPage() {
           {error && <p style={{ color: '#f87171', fontSize: 13, margin: 0 }}>{error}</p>}
           <button
             type="submit"
-            disabled={loading || !password}
-            style={{ background: loading || !password ? '#1a1a1a' : '#c084fc', color: loading || !password ? '#444' : '#000', border: 'none', borderRadius: 8, padding: '12px', fontWeight: 700, fontSize: 14, cursor: loading || !password ? 'not-allowed' : 'pointer' }}
+            disabled={loading}
+            style={{ background: loading ? '#1a1a1a' : '#c084fc', color: loading ? '#444' : '#000', border: 'none', borderRadius: 8, padding: '12px', fontWeight: 700, fontSize: 14, cursor: loading || !password ? 'not-allowed' : 'pointer' }}
           >
             {loading ? 'Logowanie...' : 'Zaloguj się'}
           </button>
