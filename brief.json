@@ -1,0 +1,62 @@
+{
+  "client_id": "akademia-sway",
+  "business_name": "Akademia Sway Joanna Olejniczak",
+  "short_name": "Akademia Sway",
+  "owner": "Joanna Olejniczak",
+  "business_type": "solo",
+  "industry": "pole_dance_studio",
+  "city": "Poznań",
+  "address": "ul. Jeansowa 18, Poznań",
+  "phone": "509100912",
+  "email": "akademia.sway@gmail.com",
+  "nip": "7831904251",
+  "legal_name": "Sway pole & aerial sports",
+  "instagram": "https://www.instagram.com/akademia.sway",
+  "domain": "TBD (brak domeny — do zakupu)",
+  "style": "sportowy, elegancki, bez szaleństw",
+  "package": "DNA SEO",
+  "design_archetype": "LUXURY EDITORIAL",
+  "color_palette": {
+    "primary": "#0a0a0a",
+    "accent": "#c9a84c",
+    "secondary": "#f5f5f5",
+    "text": "#ffffff",
+    "note": "Ciemne tło, złoty akcent, czytelna biel"
+  },
+  "fonts": {
+    "heading": "Playfair Display",
+    "body": "Inter"
+  },
+  "services": [
+    "BASIC — szkolenie dla początkujących instruktorów",
+    "INTERMEDIATE — szkolenie dla średniozaawansowanych instruktorów",
+    "ADVANCED — szkolenie dla zaawansowanych instruktorów",
+    "ABC DYNAMIKI — wprowadzenie do dynamiki w pole dance",
+    "DYNAMIKA 2.0 — zaawansowana dynamika"
+  ],
+  "target_audience": "Przyszli i obecni instruktorzy pole dance",
+  "unique_selling_points": [
+    "Jednodniowe szkolenia — przystępna formuła bez wielomiesięcznych zjazdów",
+    "Obszerny skrypt dla każdego uczestnika",
+    "Nagrania z zajęć",
+    "Wsparcie na grupie po szkoleniu",
+    "Konsultacje stacjonarne i online",
+    "Szkolenia wyjazdowe przy grupie chętnych",
+    "Skupienie na technice i praktyce — nie tylko teoria"
+  ],
+  "seo_keywords": [
+    "szkolenia pole dance",
+    "kursy pole dance",
+    "szkolenia dla instruktorów pole dance",
+    "kursy instruktorskie pole dance",
+    "pole dance Poznań",
+    "instruktorzy Poznań"
+  ],
+  "booking_method": "Wiadomość na IG lub email z: datą szkolenia, imieniem, nazwiskiem, telefonem",
+  "placeholders": {
+    "prices": "PLACEHOLDER — cennik do dosłania",
+    "reviews": "PLACEHOLDER — opinie do dosłania (3-5 fikcyjnych na start)",
+    "photos": "Unsplash — pole dance, taniec, sport (tematyczne)",
+    "logo": "PLACEHOLDER — logo do dosłania"
+  }
+}

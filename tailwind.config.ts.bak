@@ -9,15 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "rgb(var(--color-background) / <alpha-value>)",
-        accent: "rgb(var(--color-accent) / <alpha-value>)",
-        "accent-hover": "rgb(var(--color-accent-hover) / <alpha-value>)",
-        surface: "rgb(var(--color-surface) / <alpha-value>)",
-        "surface-2": "rgb(var(--color-surface-2) / <alpha-value>)",
-        "text-primary": "rgb(var(--color-text-primary) / <alpha-value>)",
-        "text-secondary": "rgb(var(--color-text-secondary) / <alpha-value>)",
-        "text-muted": "rgb(var(--color-text-muted) / <alpha-value>)",
-        "label-dark": "rgb(var(--color-label) / <alpha-value>)",
+        background: "#6B7D65",
+        accent: "#C4935A",
+        "accent-hover": "#B3813F",
+        surface: "#B8C4B2",
+        "surface-2": "#EDE8DC",
+        "text-primary": "#ffffff",
+        "text-secondary": "#3D4A38",
+        "text-muted": "#8A9A84",
       },
       fontFamily: {
         heading: ["var(--font-playfair)", "Georgia", "serif"],
