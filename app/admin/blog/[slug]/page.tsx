@@ -139,7 +139,26 @@ export default function EditBlogPage() {
               </div>
               <div>
                 <label style={labelStyle}>Obrazek</label>
-                <input style={inputStyle} value={post.image} onChange={e => setPost(p => p ? { ...p, image: e.target.value } : p)} />
+                <input style={inputStyle} value={post.image} onChange={e => setPost(p => p ? { ...p, image: e.target.value } : p)} placeholder="/joanna.jpg lub URL" />
+                <label style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 6, padding: '8px 12px', background: '#1a1a1a', border: '1px solid #2a2a2a', borderRadius: 8, cursor: 'pointer', fontSize: 13, color: '#aaa' }}>
+                  📎 Prześlij zdjęcie
+                  <input type="file" accept="image/*" style={{ display: 'none' }} onChange={async (e) => {
+                    const file = e.target.files?.[0];
+                    if (!file) return;
+                    const fd = new FormData();
+                    fd.append('file', file);
+                    setToast('Przesyłanie...');
+                    const res = await fetch('/api/upload', { method: 'POST', body: fd });
+                    const data = await res.json();
+                    if (data.url) {
+                      setPost(p => p ? { ...p, image: data.url } : p);
+                      setToast('Zdjęcie przesłane!');
+                    } else {
+                      setToast('Błąd przesyłania');
+                    }
+                    setTimeout(() => setToast(''), 3000);
+                  }} />
+                </label>
               </div>
             </div>
           </div>
