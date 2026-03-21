@@ -44,7 +44,7 @@ export default function AdminBlogPage() {
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
         <h1 style={{ color: '#fff', fontSize: 24, fontWeight: 700, margin: 0 }}>📝 Artykuły</h1>
-        <Link href="/admin/blog/new">
+        <Link href="/admin/blog/create">
           <button style={{ padding: '10px 20px', background: '#c084fc', color: '#000', border: 'none', borderRadius: 8, fontWeight: 700, fontSize: 14, cursor: 'pointer' }}>
             + Nowy artykuł
           </button>

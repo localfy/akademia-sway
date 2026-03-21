@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingPhone from "@/components/FloatingPhone";
 import Script from "next/script";
 import { LocalBusinessSchema } from "@/components/SchemaOrg";
+import { headers } from "next/headers";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -41,11 +42,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const headersList = await headers();
+  const pathname = headersList.get("x-invoke-path") || headersList.get("x-pathname") || "";
+  const isAdmin = pathname.startsWith("/admin");
   return (
     <html lang="pl" className={`${playfair.variable} ${inter.variable}`}>
       <body className="bg-background text-text-primary font-body">
@@ -63,10 +67,10 @@ export default function RootLayout({
           `}
         </Script>
         <LocalBusinessSchema />
-        <Navbar />
+        {!isAdmin && <Navbar />}
         <main>{children}</main>
-        <Footer />
-        <FloatingPhone />
+        {!isAdmin && <Footer />}
+        {!isAdmin && <FloatingPhone />}
       </body>
     </html>
   );
