@@ -42,5 +42,16 @@
     "image": "/joanna.jpg",
     "published": true,
     "content": "#TEST - Test2 *test222"
+  },
+  {
+    "slug": "test-claw-autotest",
+    "title": "Test automat Claw",
+    "excerpt": "Testowy artykuł automatycznego testu.",
+    "date": "21 marca 2026",
+    "category": "Test",
+    "readTime": "1 min",
+    "image": "/joanna-1.jpg",
+    "published": false,
+    "content": "Treść testowa."
   }
 ]
