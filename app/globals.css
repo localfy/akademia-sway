@@ -118,3 +118,52 @@ a {
 [data-theme="v2"] footer .text-white.font-bold {
   color: rgba(61, 82, 64, 1) !important;
 }
+
+/* Blog content markdown styles */
+.blog-content h1,
+.blog-content h2 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+.blog-content h3 {
+  font-family: var(--font-playfair), serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.blog-content p {
+  margin-bottom: 1.25rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.8;
+}
+.blog-content ul, .blog-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: rgba(255,255,255,0.85);
+}
+.blog-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+.blog-content strong {
+  color: white;
+  font-weight: 600;
+}
+.blog-content a {
+  color: var(--color-accent, #a3b18a);
+  text-decoration: underline;
+}
+.blog-content blockquote {
+  border-left: 3px solid rgba(255,255,255,0.2);
+  padding-left: 1rem;
+  color: rgba(255,255,255,0.6);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
