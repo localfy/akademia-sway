@@ -2,22 +2,13 @@
   "basic": {
     "id": "basic",
     "title": "BASIC",
-    "subtitle": "Solidne podstawy metodyczne",
+    "subtitle": "test",
     "price": "990",
     "duration": "2 dni",
     "nextDate": "",
-    "description": "Szkolenie BASIC to fundament pracy każdego instruktora pole dance. Nauczysz się planować zajęcia, wprowadzać figury i budować świadomość ciała u kursantów.",
+    "description": "test",
     "program": [
-      "Jak zaplanować pierwsze 6 miesięcy zajęć",
-      "Jak wprowadzać statyk na zajęciach",
-      "Jakie są najczęstsze błędy oraz jak ich unikać",
-      "Jak dopasować rozgrzewkę do poziomu uczestników",
-      "Jak wprowadzać figury na zajęciach",
-      "Jak budować świadomość ciała u kursantów",
-      "Jak radzić sobie kiedy mamy wymieszany poziom",
-      "Co to progresja i regresja oraz jak ich używać",
-      "Co zawiera dobry plan treningowy i jak go stworzyć",
-      "Czy asekuracja na poziomie podstawowym jest potrzebna, kiedy i jak ją stosować"
+      "test"
     ],
     "image": "/group-basic.jpg"
   },
